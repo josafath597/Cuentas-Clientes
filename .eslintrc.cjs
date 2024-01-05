@@ -21,6 +21,8 @@ module.exports = {
     },
     plugins: ['react', 'react-hooks', 'prettier'],
     rules: {
+        curly: ['error', 'all'],
+        'max-len': ['error', { code: 150 }],
         'jsx-a11y/no-autofocus': [
             2,
             {
