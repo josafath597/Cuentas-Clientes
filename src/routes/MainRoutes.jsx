@@ -3,7 +3,7 @@ import { Navigate } from 'react-router-dom';
 import Loadable from '../ui-component/Loadable';
 
 // sample page routing
-const DefaultPage = Loadable(lazy(() => import('../views/DefaultPage')));
+const Clients = Loadable(lazy(() => import('../views/clients/Clients')));
 // ==============================|| MAIN ROUTING ||============================== //
 
 const MainRoutes = {
@@ -11,7 +11,7 @@ const MainRoutes = {
     children: [
         {
             path: '/',
-            element: <DefaultPage />
+            element: <Clients />
         },
         {
             path: '*',
